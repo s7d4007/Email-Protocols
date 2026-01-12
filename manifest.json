@@ -1,0 +1,27 @@
+{
+  "name": "Email Protocols Guide",
+  "short_name": "Email Guide",
+  "description": "Lightweight guide to email protocols: POP3, IMAP, SMTP with practical commands",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#6c5ce7",
+  "background_color": "#f6f7fb",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%236c5ce7' width='192' height='192'/><text x='50%' y='50%' font-size='100' font-weight='bold' text-anchor='middle' dy='0.35em' fill='white' font-family='system-ui'>EP</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%236c5ce7' width='512' height='512'/><text x='50%' y='50%' font-size='250' font-weight='bold' text-anchor='middle' dy='0.35em' fill='white' font-family='system-ui'>EP</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "reference"],
+  "screenshots": []
+}

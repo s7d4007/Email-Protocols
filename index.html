@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Protocols</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Protocols Guide | POP3, IMAP, SMTP Commands</title>
+    <meta name="description" content="Lightweight guide on Internet Technologies: email protocols (POP3, IMAP, SMTP) with practical commands and examples.">
+    <meta name="keywords" content="email protocols, POP3, IMAP, SMTP, Internet Technologies, guide">
+    <meta name="author" content="Souvik Dutta">
+    <meta name="theme-color" content="#6c5ce7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%236c5ce7' width='180' height='180'/><text x='50%' y='50%' font-size='90' font-weight='bold' text-anchor='middle' dy='0.3em' fill='white' font-family='system-ui'>EP</text></svg>">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Practical notes on Internet Technologies: email protocols (POP3, IMAP, SMTP) and commands.">
+    <link rel="canonical" href="https://email-protocols-guide.vercel.app/">
+    <style media="print">
+        .nav, .site-footer { display: none; }
+        .container { max-width: 100%; }
+        section { page-break-inside: avoid; }
+    </style>
 </head>
 
 <body>
@@ -21,7 +35,7 @@
         </nav>
         <div class="hero">
             <div class="container">
-                <h1>Welcome to HTML</h1>
+                <h1>What is Email Protocols?</h1>
                 <p class="tagline">Internet Technologies — Practical Guide</p>
             </div>
         </div>
@@ -47,6 +61,24 @@
                 <li><strong>IMAP</strong> — Internet Message Access Protocol (syncs mail across devices)</li>
                 <li><strong>SMTP</strong> — Simple Mail Transfer Protocol (sending mail between servers/clients)</li>
             </ol>
+        </section>
+
+        <section id="quick-ref" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+            <h3>Quick Reference Card</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; font-size: 0.9rem;">
+                <div>
+                    <h5 style="margin-top: 0; color: #ffd1dc;">POP3</h5>
+                    <p style="margin: 0; font-size: 0.85rem;"><strong>Port:</strong> 110 / 995 (SSL)<br/><strong>Use:</strong> Download &amp; delete</p>
+                </div>
+                <div>
+                    <h5 style="margin-top: 0; color: #fff59d;">IMAP</h5>
+                    <p style="margin: 0; font-size: 0.85rem;"><strong>Port:</strong> 143 / 993 (SSL)<br/><strong>Use:</strong> Sync &amp; organize</p>
+                </div>
+                <div>
+                    <h5 style="margin-top: 0; color: #a6e3a1;">SMTP</h5>
+                    <p style="margin: 0; font-size: 0.85rem;"><strong>Port:</strong> 25 / 587 / 465<br/><strong>Use:</strong> Send mail</p>
+                </div>
+            </div>
         </section>
 
         <section id="commands">
@@ -95,10 +127,13 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Souvik Dutta - Built for learning.</p>
+            <p>© 2026 Souvik Dutta - Built for learning. | <a href="#" id="downloadPdf" style="color: inherit; text-decoration: underline; cursor: pointer;">Download as PDF</a></p>
+            <p style="font-size: 0.85rem; opacity: 0.7;">Last updated: January 2026 | <a href="https://github.com" style="color: inherit;">GitHub</a></p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
