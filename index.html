@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Protocols</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Practical notes on Internet Technologies: email protocols (POP3, IMAP, SMTP) and commands.">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="logo">Email Protocols</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#protocols">Email Protocols</a></li>
+                <li><a href="#commands">Commands</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Welcome to HTML</h1>
+                <p class="tagline">Internet Technologies — Practical Guide</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="overview">
+            <h2>Introduction</h2>
+            <p>Email protocols are standardized communication rules that enable the reliable transmission and retrieval of electronic mail. These protocols define how email clients communicate with mail servers and how mail servers exchange messages. The three primary email protocols—POP3, IMAP, and SMTP—each serve distinct purposes in the email ecosystem, handling retrieval, synchronization, and transmission respectively.</p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li><strong>POP3 & IMAP</strong> are used for retrieving mail from a server (client-to-server)</li>
+                <li><strong>SMTP</strong> is used for sending mail between clients and servers, and between servers</li>
+                <li>Understanding these protocols is essential for configuring email clients and servers</li>
+            </ul>
+        </section>
+
+        <section id="protocols">
+            <h3>What is <mark>Email Protocols?</mark></h3>
+            <h4>Types of Email Protocols</h4>
+            <ol class="protocol-list" type="a">
+                <li><strong>POP3</strong> — Post Office Protocol version 3 (downloads mail to local device)</li>
+                <li><strong>IMAP</strong> — Internet Message Access Protocol (syncs mail across devices)</li>
+                <li><strong>SMTP</strong> — Simple Mail Transfer Protocol (sending mail between servers/clients)</li>
+            </ol>
+        </section>
+
+        <section id="commands">
+            <h4>POP3 Commands</h4>
+            <p>Common POP3 commands for downloading and managing mail:</p>
+            <ul>
+                <li><code>USER &lt;name&gt;</code> — specify username for authentication</li>
+                <li><code>PASS &lt;password&gt;</code> — specify password for authentication</li>
+                <li><code>STAT</code> — display mailbox status (message count and size)</li>
+                <li><code>LIST [msg]</code> — list message numbers and sizes</li>
+                <li><code>RETR &lt;msg&gt;</code> — retrieve a specific message</li>
+                <li><code>DELE &lt;msg&gt;</code> — mark a message for deletion</li>
+                <li><code>RSET</code> — unmark deleted messages</li>
+                <li><code>QUIT</code> — end session and process deletions</li>
+            </ul>
+
+            <h4 style="margin-top: 2rem;">IMAP Commands</h4>
+            <p>Common IMAP commands for syncing and organizing mail:</p>
+            <ul>
+                <li><code>LOGIN &lt;user&gt; &lt;password&gt;</code> — authenticate user</li>
+                <li><code>SELECT &lt;mailbox&gt;</code> — select a mailbox to access</li>
+                <li><code>LIST &lt;ref&gt; &lt;name&gt;</code> — list available mailboxes</li>
+                <li><code>FETCH &lt;seq&gt; &lt;item&gt;</code> — retrieve specific message items</li>
+                <li><code>STORE &lt;seq&gt; &lt;item&gt; &lt;value&gt;</code> — modify message flags</li>
+                <li><code>SEARCH &lt;criteria&gt;</code> — search for messages by criteria</li>
+                <li><code>CREATE &lt;name&gt;</code> — create a new mailbox</li>
+                <li><code>LOGOUT</code> — end IMAP session</li>
+            </ul>
+
+            <h4 style="margin-top: 2rem;">SMTP Commands</h4>
+            <p>Common SMTP commands for sending and relaying mail:</p>
+            <ul>
+                <li><code>EHLO &lt;domain&gt;</code> — identify client and request server capabilities</li>
+                <li><code>HELO &lt;domain&gt;</code> — older version of EHLO</li>
+                <li><code>AUTH &lt;mechanism&gt;</code> — authenticate client credentials</li>
+                <li><code>MAIL FROM: &lt;address&gt;</code> — specify sender address</li>
+                <li><code>RCPT TO: &lt;address&gt;</code> — specify recipient address</li>
+                <li><code>DATA</code> — initiate message content transfer</li>
+                <li><code>RESET</code> — reset the current mail transaction</li>
+                <li><code>QUIT</code> — close SMTP connection</li>
+            </ul>
+
+            <h6>Learning HTML</h6>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Souvik Dutta - Built for learning.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

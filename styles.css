@@ -1,0 +1,133 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --accent: #6c5ce7;
+    --muted: #6b7280;
+    --max-width: 1000px;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.site-header {
+    background: linear-gradient(90deg, #eef2ff, #f8f9ff)
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--accent)
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem
+}
+
+.nav-links a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.hero {
+    padding: 2rem 0;
+    text-align: left
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #111827
+}
+
+.tagline {
+    margin-top: .25rem;
+    color: var(--muted)
+}
+
+main {
+    padding: 2rem 0
+}
+
+section {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04)
+}
+
+.protocol-list {
+    padding-left: 1.2rem
+}
+
+mark {
+    background: linear-gradient(90deg, #fff59d, #ffd1dc);
+    padding: .05rem .2rem;
+    border-radius: 4px
+}
+
+.site-footer {
+    padding: 1rem 0;
+    color: var(--muted);
+    text-align: center
+}
+
+code {
+    background: #f3f4f6;
+    padding: .15rem .35rem;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace
+}
+
+@media (max-width:700px) {
+    .nav {
+        flex-direction: column;
+        gap: .5rem
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        text-align: center
+    }
+
+    .container {
+        padding: 0 .75rem
+    }
+}
