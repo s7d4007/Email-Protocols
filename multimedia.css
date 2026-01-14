@@ -1,0 +1,395 @@
+/* Multimedia CSS - Professional & Attractive Design */
+
+:root {
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --accent: #fd79a8;
+    --success: #00b894;
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.1);
+    --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.15);
+    --radius: 12px;
+}
+
+/* Media Grid */
+.multimedia-section {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.multimedia-section h2 {
+    color: var(--primary);
+    margin-top: 0;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-intro {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Video Grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.media-card {
+    background: var(--bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 2px solid var(--border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+}
+
+.media-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    aspect-ratio: 16 / 9;
+}
+
+.media-container video,
+.media-container audio {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.media-container video::-webkit-media-controls {
+    background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+}
+
+.media-info {
+    padding: 1.5rem;
+}
+
+.media-info h3 {
+    margin: 0 0 0.75rem 0;
+    color: var(--text);
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.media-info p {
+    margin: 0 0 1.25rem 0;
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.media-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+}
+
+.media-meta span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    background: var(--bg);
+    border-radius: 20px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+}
+
+.media-meta .duration {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+}
+
+.media-meta .level {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border: none;
+}
+
+/* Audio List */
+.audio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.audio-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg);
+    border-radius: var(--radius);
+    border: 2px solid var(--border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: flex-start;
+}
+
+.audio-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.audio-player-wrapper {
+    flex-shrink: 0;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.audio-icon {
+    font-size: 2.5rem;
+}
+
+.audio-player-wrapper audio {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 8px;
+}
+
+.audio-player-wrapper audio::-webkit-media-controls-panel {
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+.audio-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.audio-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text);
+    font-size: 1.15rem;
+}
+
+.audio-info p {
+    margin: 0 0 1rem 0;
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.audio-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--primary);
+    border-color: white;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Lazy Loading Placeholder */
+.lazy-video,
+.lazy-audio {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .multimedia-section {
+        padding: 1.5rem;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .audio-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .audio-player-wrapper {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .audio-player-wrapper audio {
+        max-width: 100%;
+        flex: 1;
+    }
+
+    .multimedia-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .multimedia-section {
+        padding: 1rem;
+    }
+
+    .media-grid {
+        gap: 1rem;
+    }
+
+    .media-card {
+        border-width: 1px;
+    }
+
+    .media-info {
+        padding: 1rem;
+    }
+
+    .audio-card {
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .multimedia-section {
+        page-break-inside: avoid;
+    }
+
+    .media-card,
+    .audio-card {
+        page-break-inside: avoid;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
+/* Accessibility */
+audio:focus,
+video:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Video Controls Enhancement */
+video::-webkit-media-controls-panel {
+    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+}
+
+video::-moz-media-controls-panel {
+    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}

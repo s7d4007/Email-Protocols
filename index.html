@@ -31,6 +31,7 @@
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#protocols">Email Protocols</a></li>
                 <li><a href="#commands">Commands</a></li>
+                <li><a href="multimedia.html" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.3s ease;">📹 Multimedia</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -84,42 +85,138 @@
         <section id="commands">
             <h4>POP3 Commands</h4>
             <p>Common POP3 commands for downloading and managing mail:</p>
-            <ul>
-                <li><code>USER &lt;name&gt;</code> — specify username for authentication</li>
-                <li><code>PASS &lt;password&gt;</code> — specify password for authentication</li>
-                <li><code>STAT</code> — display mailbox status (message count and size)</li>
-                <li><code>LIST [msg]</code> — list message numbers and sizes</li>
-                <li><code>RETR &lt;msg&gt;</code> — retrieve a specific message</li>
-                <li><code>DELE &lt;msg&gt;</code> — mark a message for deletion</li>
-                <li><code>RSET</code> — unmark deleted messages</li>
-                <li><code>QUIT</code> — end session and process deletions</li>
-            </ul>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 1rem;">
+                <thead>
+                    <tr style="background: #f3f4f6;">
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Command</th>
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>USER &lt;name&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Specify username for authentication</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>PASS &lt;password&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Specify password for authentication</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>STAT</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Display mailbox status (message count and size)</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>LIST [msg]</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">List message numbers and sizes</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>RETR &lt;msg&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Retrieve a specific message</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>DELE &lt;msg&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Mark a message for deletion</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>RSET</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Unmark deleted messages</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>QUIT</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">End session and process deletions</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h4 style="margin-top: 2rem;">IMAP Commands</h4>
             <p>Common IMAP commands for syncing and organizing mail:</p>
-            <ul>
-                <li><code>LOGIN &lt;user&gt; &lt;password&gt;</code> — authenticate user</li>
-                <li><code>SELECT &lt;mailbox&gt;</code> — select a mailbox to access</li>
-                <li><code>LIST &lt;ref&gt; &lt;name&gt;</code> — list available mailboxes</li>
-                <li><code>FETCH &lt;seq&gt; &lt;item&gt;</code> — retrieve specific message items</li>
-                <li><code>STORE &lt;seq&gt; &lt;item&gt; &lt;value&gt;</code> — modify message flags</li>
-                <li><code>SEARCH &lt;criteria&gt;</code> — search for messages by criteria</li>
-                <li><code>CREATE &lt;name&gt;</code> — create a new mailbox</li>
-                <li><code>LOGOUT</code> — end IMAP session</li>
-            </ul>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 1rem;">
+                <thead>
+                    <tr style="background: #f3f4f6;">
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Command</th>
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>LOGIN &lt;user&gt; &lt;password&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Authenticate user</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>SELECT &lt;mailbox&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Select a mailbox to access</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>LIST &lt;ref&gt; &lt;name&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">List available mailboxes</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>FETCH &lt;seq&gt; &lt;item&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Retrieve specific message items</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>STORE &lt;seq&gt; &lt;item&gt; &lt;value&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Modify message flags</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>SEARCH &lt;criteria&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Search for messages by criteria</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>CREATE &lt;name&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Create a new mailbox</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>LOGOUT</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">End IMAP session</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h4 style="margin-top: 2rem;">SMTP Commands</h4>
             <p>Common SMTP commands for sending and relaying mail:</p>
-            <ul>
-                <li><code>EHLO &lt;domain&gt;</code> — identify client and request server capabilities</li>
-                <li><code>HELO &lt;domain&gt;</code> — older version of EHLO</li>
-                <li><code>AUTH &lt;mechanism&gt;</code> — authenticate client credentials</li>
-                <li><code>MAIL FROM: &lt;address&gt;</code> — specify sender address</li>
-                <li><code>RCPT TO: &lt;address&gt;</code> — specify recipient address</li>
-                <li><code>DATA</code> — initiate message content transfer</li>
-                <li><code>RESET</code> — reset the current mail transaction</li>
-                <li><code>QUIT</code> — close SMTP connection</li>
-            </ul>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 1rem;">
+                <thead>
+                    <tr style="background: #f3f4f6;">
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Command</th>
+                        <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; font-weight: 600;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>EHLO &lt;domain&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Identify client and request server capabilities</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>HELO &lt;domain&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Older version of EHLO</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>AUTH &lt;mechanism&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Authenticate client credentials</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>MAIL FROM: &lt;address&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Specify sender address</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>RCPT TO: &lt;address&gt;</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Specify recipient address</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>DATA</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Initiate message content transfer</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>RESET</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Reset the current mail transaction</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"><code>QUIT</code></td>
+                        <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Close SMTP connection</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h6>Learning HTML</h6>
         </section>

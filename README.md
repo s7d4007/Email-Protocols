@@ -87,6 +87,11 @@ EXPOSE 80
 
 Educational use. Created for IT practical learning.
 
+## Credits
+
+- **Video Files** - [Pexels](https://www.pexels.com/) - Free stock videos used in multimedia gallery
+- **Audio Files** - Local assets
+
 ## Author
 
 Souvik Dutta | January 2026
